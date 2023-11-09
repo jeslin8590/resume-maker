@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+      h2{
+        margin-top: 3%;
+      }
+      button{
+        text-align: center;
+      }
+    </style>
+   </head>
+
+<body>
+  <h1 style="text-align: center;">RESUME MAKER</h1>
+  <div class="container">
+    <form id="fo" action="./index.html" method="post">
+      <div class="row mt-5">
+        <div class="col mr-5">
+          <input type="text" id="fname"   class="form-control" placeholder="First name" required>
+        </div>
+        <div class="col">
+          <input type="text" id="lname" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+      <div class="col mt-5">
+        <input type="text" id="po" name="position" placeholder="position">
+      </div>
+      <h2>contact</h2>
+      <div class="col mt-5">
+        <input type="text" id="pl" name="place" placeholder="place" required>
+        <input type="number" id="ph" name="phno" placeholder="phone number" required><br>
+        <input style="margin-top: 5%;" type="email" id="em" name="email" placeholder="email" required>
+        <input type="text" name="web" id="we" placeholder="website">
+      </div>
+      <h2>Skills</h2>
+      <div class="col mt-5">
+        <input type="text" name="skill" id="sk">
+        <input type="text" name="skill">
+      </div>
+      <h2>About Me</h2>
+      <div class="col mt-5">
+        <textarea name="about" id="ab" cols="50" rows="7"></textarea>
+      </div>
+      <h2>Education</h2>
+      <div class="col mt-5">
+        <input type="text" id="pro" name="program" placeholder="course">
+        <input type="date" id="ye" name="year">
+        <input type="text" id="uni" name="university" placeholder="university">
+      </div>
+      <div class="col mt-5">
+        <input type="text"  name="program" placeholder="course">
+        <input type="date" name="year">
+        <input type="text"  name="university" placeholder="university">
+      </div>
+      <h2>Work Experience</h2>
+      <div class="col mt-5">
+        <input type="text" id="co" name="company-name" placeholder="company">
+        <input type="date" id="yr" name="year">
+        <input type="text" id="pos" name="position" placeholder="position">
+        <input type="text" id="des" name="description" placeholder="description">
+      </div>
+      <div class="col mt-5">
+        <input type="text" name="company-name" placeholder="company">
+        <input type="date" name="year">
+        <input type="text" name="position" placeholder="position">
+        <input type="text" name="description" placeholder="description">
+      </div> 
+      <div class="col mt-5 text-center">
+        
+      </div>
+    </form>
+  </div>
+  <button onclick="submit()">submit</button>
+  <!-- <h2 style="text-align: center;">RESUME</h2>
+
+  <h3>first name: <span id="f1"></span></h3>
+ <h3>last name:  <span id="f2"></span></h3>
+  <h3>positon: <span id="p1"></span></h3>
+  <h3>place:<span id="p2"></span> </h3>
+  <h3>phone number:<span id="p3"></span> </h3>
+  <h3>email:<span id="e1"></span> </h3>
+  <h3>website:<span id="s1"></span> </h3>
+  <h3>skill:<span id="s2"></span> </h3>
+  <h3>about me:<span id="a1"></span> </h3>
+  <h3>course:<span id="c1"></span> </h3>
+  <h3>year:<span id="y1"></span> </h3>
+  <h3>university:<span id="u1"></span> </h3>
+  <h3>company:<span id="co1"></span> </h3>
+  <h3>year:<span id="y2"></span> </h3>
+  <h3>position:<span id="pos1"></span> </h3>
+  <h3>description:<span id="d1"></span> </h3> -->
+  
+
+
+
+  <script>
+    function submit(){
+    const firname = document.getElementById("fname").value;
+    const secname=document.getElementById("lname").value;
+    const poname=document.getElementById("po").value;
+    const plname=document.getElementById("pl").value;
+    const phname=document.getElementById("ph").value;
+    const mailname=document.getElementById("em").value;
+    const webname=document.getElementById("we").value;
+    const skillname=document.getElementById("sk").value;
+    const aboname=document.getElementById("ab").value;
+    const coursename=document.getElementById("pro").value;
+    const yearname=document.getElementById("ye").value;
+    const universityname=document.getElementById("uni").value;
+    const companyname=document.getElementById("co").value;
+    const year1name=document.getElementById("yr").value;
+    const positionname=document.getElementById("pos").value;
+    const descriptionname=document.getElementById("des").value;
+
+
+
+
+    // document.getElementById("f1").innerHTML = firname;
+    // document.getElementById("f2").innerHTML = secname;
+    // document.getElementById("p1").innerHTML = poname;
+    // document.getElementById("p2").innerHTML = plname;
+    // document.getElementById("p3").innerHTML = phname;
+    // document.getElementById("e1").innerHTML = mailname;
+    // document.getElementById("s1").innerHTML = webname;
+    // document.getElementById("s2").innerHTML = skillname;
+    // document.getElementById("a1").innerHTML = aboname;
+    // document.getElementById("c1").innerHTML = coursename;
+    // document.getElementById("y1").innerHTML = yearname;
+    // document.getElementById("u1").innerHTML = universityname;
+    // document.getElementById("co1").innerHTML = companyname;
+    // document.getElementById("y2").innerHTML = year1name;
+    // document.getElementById("pos1").innerHTML = positionname;
+    // document.getElementById("d1").innerHTML = descriptionname;
+ 
+    const encodedInput1 = encodeURIComponent(firname);
+    window.location.href = 'result.html?firname=${encodeInput1}&input2=${encodeInput2}&';
+
+    }
+    </script>
+    
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

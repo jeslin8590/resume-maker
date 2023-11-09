@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+       <style>
+        h2 {
+            background-color: black;
+            color: white;
+            border-radius: 0px 50px 50px 0px;
+            padding-left: 7%;
+            margin-top: 10%;
+            width: 75%;
+        }
+
+        .edu {
+            border-left: 5px solid black;
+            padding-left: 7%;
+        }
+        li{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg col-md mt-5">
+                <img style="border: 5px solid rgb(199, 191, 191); " src="./images/APJ ABDUL KALAM.jfif" alt="img1" >
+                    <h1 id="f1">ISABEL </h1>
+                    <h1 id="f2">MERCADO</h1>
+                    <!-- <span id="f1"></span> -->
+                        <h4 id="f3" style="margin-top: 20px;">GRAPHIC DESIGNER</h4>
+                    <h2>contact</h2>
+                        <p id="f4" style="margin-top: 20px;">123antwhere st.anycity</p>
+                        <p id="f5">2873867386938</p>
+                        <p id="f6">www.hhdhsite.com</p>
+                        <p id="f7">jkhdjjdb@gmail.com</p>
+                    <h2 >skills</h2>
+                        <li id="f8" >project management</li>
+                        <li id="f8">problem solving</li>
+                        <li id="f8">creativity</li>
+                        <li id="f8">leadership</li>
+            </div>
+            <div class="col-lg  col-md">
+                <h2 style="border-radius: 50px 0px 0px 50px; width: 100%;">About Me</h2>
+                <P id="f9" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ducimus tempore blanditiis eaque adipisci ut autem ipsam amet impedit quo? Minima,
+                    odit ea dolores hic repudiandae aliquam. Laborum doloribus atque enim.
+                    Ducimus tempore blanditiis eaque adipisci ut autem ipsam amet impedit quo? Minima,
+                    odit ea dolores hic repudiandae aliquam. Laborum doloribus atque enim.</P>
+                <h2 style="border-radius: 50px 0px 0px 50px; width: 100%;">Education</h2>
+                <div class="edu">
+                    <h5 id="f10">Masters in Product designer</h5>
+                    <h6 id="f11">2004-2008</h6>
+                    <h5 id="f12">Really Great University</h5>
+                </div>
+                <div class="edu">
+                    <h5>BA in Product designer</h5>
+                    <h6>2004-2008</h6>
+                    <h5>Really Great University</h5>
+                </div>
+                <h2 style="border-radius: 50px 0px 0px 50px; width: 100%;">work experience</h2>
+                <div class="edu">
+                    <h5 id="f13">Really Great company <br>
+                       <h4 id="f14">2004-2008</h4> 
+                        <h6 id="f15">senior graphic designer</h6>
+                        <h5 id="f16" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum earum. Voluptate
+                            nisi eius minima.</h5>
+                        <h5 id="f16">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                </div><br>
+                <div class="edu">
+                    <h5>Really Great company <br>
+                        2006-2010
+                        <h6> graphic designer</h6>
+                        <li style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, voluptatum earum. Voluptate
+                            nisi eius minima.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                </div><br>
+              
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams1 = new URLSearchParams1(window.location.search);
+
+    const firname = urlParams.get("firname");
+    const secondvalue = urlParams1.get("value2");
+    // const positionvalue = urlParams.get("value3");
+    // const placevalue = urlParams.get("value4");
+    // const phonevalue = urlParams.get("value5");
+    // const mailvalue = urlParams.get("value6");
+    // const webvalue = urlParams.get("value7");
+    // const skillvalue = urlParams.get("value8");
+    // const aboutvalue = urlParams.get("value9");
+    // const coursevalue = urlParams.get("value10");
+    // const yearvalue = urlParams.get("value11");
+    // const universityvalue = urlParams.get("value12");
+    // const companyvalue = urlParams.get("value13");
+    // const year1value = urlParams.get("value14");
+    // const position1value = urlParams.get("value15");
+    // const descriptionvalue = urlParams.get("value16");
+
+
+
+
+    document.getElementById("f1").textContent = firname;
+    document.getElementById("f2").textContent =secondvalue;
+    // document.getElementById("f3").textContent = positionvalue;
+    // document.getElementById("f4").textContent = placevalue;
+    // document.getElementById("f5").textContent = phonevalue;
+    // document.getElementById("f6").textContent = mailvalue;
+    // document.getElementById("f7").textContent = webvalue;
+    // document.getElementById("f8").textContent = skillvalue;
+    // document.getElementById("f9").textContent = aboutvalue;
+    // document.getElementById("f10").textContent = coursevalue;
+    // document.getElementById("f11").textContent = yearvalue;
+    // document.getElementById("f12").textContent = universityvalue;
+    // document.getElementById("f13").textContent = companyvalue;
+    // document.getElementById("f14").textContent = year1value;
+    // document.getElementById("f15").textContent = position1value;
+    // document.getElementById("f16").textContent = descriptionvalue;
+
+</script>
+
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
